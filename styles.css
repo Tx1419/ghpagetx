@@ -1,61 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     color: #333;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f9f9f9;
 }
 
+/* Header */
 header {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
-    margin-top: 20px;
+    padding: 1.5rem 0;
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #666;
+    margin: 0.5rem 0 0;
+    font-style: italic;
 }
 
-.about, .projects {
-    width: 80%;
+/* Sections */
+section {
+    margin: 1.5rem auto;
+    padding: 1rem;
     max-width: 800px;
-    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about h2, .projects h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+section h2 {
+    color: #4CAF50;
+    margin-top: 0;
+    font-size: 1.8rem;
 }
 
-.about p, .projects ul {
-    color: #555;
-    margin-top: 10px;
+section p {
+    margin: 0.5rem 0;
 }
 
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    margin-top: 20px;
     text-align: center;
-}
-
-footer p {
-    color: #777;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
 }
 
 footer a {
-    color: #0066cc;
+    color: #4CAF50;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
 }
